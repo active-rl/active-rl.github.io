@@ -7,14 +7,14 @@ let video_container = document.getElementById("main-video");
 for (let g of games){
     let video = document.createElement('video');
     video.src = "videos/"+g+"_fov.mp4";
+    video.autoplay = true;
     video.muted = true;
     video.loop = true;
-    video.playincline = true;
+    video.playsinline = true;
     video.style="width: 16.6%";
-    video.autoplay = true;
     video.playbackRate = 0.3;
     video_container.appendChild(video);
-    video.play()
+    video.play();
     
 
     video = document.createElement('video');
@@ -22,9 +22,9 @@ for (let g of games){
     video.autoplay = true;
     video.muted = true;
     video.loop = true;
-    video.playincline = true;
+    video.playsinline = true;
     video.style="width: 16.6%";
     video.playbackRate = 0.3;
     video_container.appendChild(video);
-    video.play()
+    video.play();
 }
