@@ -14,7 +14,6 @@ for (let g of games){
     video.style="width: 16.6%";
     video.playbackRate = 0.3;
     video_container.appendChild(video);
-    video.play();
     
 
     video = document.createElement('video');
@@ -26,5 +25,4 @@ for (let g of games){
     video.style="width: 16.6%";
     video.playbackRate = 0.3;
     video_container.appendChild(video);
-    video.play();
 }
